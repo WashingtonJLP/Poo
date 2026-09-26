@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercicios
+namespace _03
 {
-    internal class Locadora
+    internal class Vendedor
     {
+        private double totalVendas;
+        private double percentualComissao;
     }
 }

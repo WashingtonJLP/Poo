@@ -10,6 +10,11 @@ namespace Exercicios
     {
         static void Main(string[] args)
         {
+            Estado e1 = new Estado("Minas Gerais");
+            Cidade c1 = new Cidade("Belo Horizonte", e1);
+            Endereco end1 = new Endereco("Rua Walter Ianni", "255", "São Gabriel", c1);
+
+            Console.WriteLine(end1.EnderecoCompleto());
         }
     }
 }

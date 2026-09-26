@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercicios
+namespace _03
 {
-    internal class Moto
+    internal class Program
     {
+        static void Main(string[] args)
+        {
+        }
     }
 }
