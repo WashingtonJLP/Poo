@@ -15,9 +15,6 @@ namespace _03
             this.setor = setor;
         }
 
-        public override double CalcularSalario()
-        {
-            return salarioBase;
-        }
+      
     }
 }

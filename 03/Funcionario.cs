@@ -19,16 +19,17 @@ namespace _03
             this.salarioBase = salarioBase;
         }
 
-        public virtual void ExibirDados()
+        public void ExibirDados()
         {
             Console.WriteLine($"Nome: {nome}\n" +
-                $"Matricula: {matricula}\n");
-                
+                $"Matricula: {matricula}\n" +
+                $"Salario Base: {salarioBase}");
         }
         public virtual double CalcularSalario()
         {
             return salarioBase;
         }
 
+     
     }
 }
