@@ -7,7 +7,7 @@
     <ProjectGuid>{68A29124-F548-440B-ADB5-3CA857F6D55A}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_06</RootNamespace>
-    <AssemblyName>_06</AssemblyName>
+    <AssemblyName>06</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aluno.cs" />
+    <Compile Include="AlunoBolsista.cs" />
+    <Compile Include="AlunoRegular.cs" />
+    <Compile Include="Curso.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

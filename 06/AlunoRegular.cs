@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace _06
 {
-    internal class AlunoRegular
+    internal class AlunoRegular: Aluno
     {
+
+        public AlunoRegular(string nome, string matricula, double mensalidade): base (nome, matricula, mensalidade)
+        {
+
+        }
     }
 }
