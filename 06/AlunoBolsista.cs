@@ -17,22 +17,14 @@ namespace _06
                 this.percentualBolsa = percentualBolsa;
             }
             else { Console.WriteLine("Informe um valor valido válido um percentual de bolsa entre 0 e 100."); }
-          
-
         }
 
         public override double CalcularMensalidade()
         {
-            if (percentualBolsa == 0)
-            {
-                return mensalidade;
-            }
-
-            else
-            {
+          
                 double desconto = (mensalidade * percentualBolsa) / 100;
                 return mensalidade - desconto;
-            }
+            
         }
     }
 }
