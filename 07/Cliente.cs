@@ -12,7 +12,7 @@ namespace _07
         protected string email;
         private static int totalClientesCriados = 0;
 
-        public Cliente(string nome, string email)
+        protected Cliente(string nome, string email)
         {
             this.nome = nome;
             this.email = email;

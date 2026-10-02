@@ -10,6 +10,7 @@ namespace _07
     {
         static void Main(string[] args)
         {
+           
         }
     }
 }
