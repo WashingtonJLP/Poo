@@ -7,7 +7,7 @@
     <ProjectGuid>{3DC1DCFF-7D68-4215-A551-EA2544214F97}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_10</RootNamespace>
-    <AssemblyName>_10</AssemblyName>
+    <AssemblyName>10</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Caminhao.Cs" />
+    <Compile Include="Carro.cs" />
+    <Compile Include="Moto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Veiculo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
