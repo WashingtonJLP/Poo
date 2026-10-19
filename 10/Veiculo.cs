@@ -10,7 +10,7 @@ namespace _10
     {
         protected string placa;
         protected int horasEstacionado;
-        private static int totalVeiculos = 1;
+        private static int totalVeiculos = 0;
 
         public Veiculo(string placa, int horasEstacionado)
         {

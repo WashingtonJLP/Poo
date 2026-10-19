@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace _10
 {
-    internal class Moto: Veiculo
+    internal class Moto : Veiculo
     {
         private int cilindradas;
 
-        public Moto(string placa, int horasEstacionado, int cilindradas): base(placa, horasEstacionado)
+        public Moto(string placa, int horasEstacionado, int cilindradas) : base(placa, horasEstacionado)
         {
             this.cilindradas = cilindradas;
         }
 
-        public override double CalcularValor() 
+        public override double CalcularValor()
         {
             return -1;
         }
