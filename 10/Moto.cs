@@ -9,6 +9,10 @@ namespace _10
     internal class Moto : Veiculo
     {
         private int cilindradas;
+        private const double VALOR_HORA = 5.00;
+        private const double TAXA_CILINDRADA = 3.00;
+        private const double DESCONTO_5 = 0.05;
+        private const double DESCONTO_10 = 0.10;
 
         public Moto(string placa, int horasEstacionado, int cilindradas) : base(placa, horasEstacionado)
         {
@@ -17,17 +21,34 @@ namespace _10
 
         public override double CalcularValor()
         {
-            return -1;
+            double valorTotal = horasEstacionado * VALOR_HORA;
+
+            return this.cilindradas > 500 ? valorTotal + (horasEstacionado * TAXA_CILINDRADA) : valorTotal;
         }
 
         public override double CalcularDesconto()
         {
-            return -1;
+            if (horasEstacionado <= 5)
+            {
+                return 0.00;
+            }
+
+            else if (horasEstacionado <= 10)
+            {
+                return CalcularValor() * DESCONTO_5;
+            }
+
+            else { return CalcularValor() * DESCONTO_10; }
         }
 
         public override void ExibirDados()
         {
-
+            Console.WriteLine($"Placa: {placa}");
+            Console.WriteLine($"Horas Estacionado: {horasEstacionado}");
+            Console.WriteLine($"Cilindradas: {cilindradas}");
+            Console.WriteLine($"Valor bruto: {CalcularValor().ToString("C2")}");
+            Console.WriteLine($"Desconto: {CalcularDesconto().ToString("C2")}");
+            Console.WriteLine($"Valor final {(CalcularValor() - CalcularDesconto()).ToString("C2")}");
         }
     }
 }

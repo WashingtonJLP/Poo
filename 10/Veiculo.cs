@@ -28,6 +28,10 @@ namespace _10
         {
             return totalVeiculos;
         }
+        public int ObterHorasEstacionado()
+        {
+            return horasEstacionado;
+        }
 
     }
 }
