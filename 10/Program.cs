@@ -57,7 +57,6 @@ namespace _10
                 }
                 
             }
-
             Console.WriteLine("=========================");
             Console.WriteLine($"Total arrecadado pelo estacionamento: {totalArrecadado.ToString("C2")}");
             Console.WriteLine("=========================");
@@ -68,7 +67,7 @@ namespace _10
             Console.WriteLine("=========================");
             Console.WriteLine($"Quantidade de veiculos que ficaram estacionados mais de 10 horas: {veiculosMaisDezHoras}");
             Console.WriteLine("=========================");
-            Console.WriteLine($"Media de horas estacionada {(totalHoras/veiculos.Count)}");
+            Console.WriteLine($"Média de horas estacionadas: {(double)totalHoras / veiculos.Count:F2}");
             Console.WriteLine("=========================");
             Console.WriteLine($"Total de veiculos criados {Veiculo.ObterTotalVeiculos()}");
 
