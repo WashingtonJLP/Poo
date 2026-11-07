@@ -17,11 +17,11 @@ namespace _12
 
         public override string Situacao()
         {
-            if (Media() >= 7 && frequencia >= 85)
+            if (Media() >= 7 && this.frequencia >= 85)
             {
                 return "Aprovado";
             }
-            else if (frequencia < 85)
+            else if (this.frequencia < 85)
             {
                 return "Reprovado por frequência";
             }

@@ -17,6 +17,10 @@ namespace _13
             this.matricula = matricula;
         }
 
+        public string Nome 
+        {
+            get{ return nome; }
+        }
         public abstract decimal CalcularSalario();
         
     }

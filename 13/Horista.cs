@@ -10,11 +10,13 @@ namespace _13
     {
         private decimal horas;
         private decimal valor_hora;
+        private decimal valor_hora_extra;
 
         public Horista(string nome, string matricula, decimal horas, decimal valor_hora): base(nome, matricula)
         {
             this.horas = horas;
             this.valor_hora = valor_hora;
+            this.valor_hora_extra = valor_hora + (valor_hora* 0.50m);
         }
 
         public override decimal CalcularSalario()
@@ -25,11 +27,10 @@ namespace _13
             {
                 horasExtra = this.horas - 160;
 
-                return (160.00m * valor_hora) + (((valor_hora * 0.50m) + valor_hora) * horasExtra) ;
-
+                return (160.00m * this.valor_hora) + (this.valor_hora_extra * horasExtra) ;
             }
 
-            else {return this.horas * valor_hora; }
+            else {return this.horas * this.valor_hora; }
         }
 
     }
