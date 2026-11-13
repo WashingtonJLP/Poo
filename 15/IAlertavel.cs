@@ -8,5 +8,6 @@ namespace _15
 {
     internal interface IAlertavel
     {
+        string Alerta();
     }
 }

@@ -13,11 +13,32 @@ namespace _15
         private double preco;
         private int quantidade;
 
-        public Produto(string codigo, string nome, double preco): this (codigo, nome, preco, 0)
+        public string Codigo
         {
-            
+            get { return codigo; }
         }
-        public Produto(string codigo, string nome, double preco, int quantidade) 
+
+        public string Nome
+        {
+            get { return nome; }
+        }
+
+        public double Preco
+        {
+            get { return preco; }
+        }
+
+        public int Quantidade
+        {
+            get { return quantidade; }
+        }
+
+        public Produto(string codigo, string nome, double preco)
+            : this(codigo, nome, preco, 0)
+        {
+        }
+
+        public Produto(string codigo, string nome, double preco, int quantidade)
         {
             this.codigo = codigo;
             this.nome = nome;
@@ -25,9 +46,25 @@ namespace _15
             this.quantidade = quantidade;
         }
 
+        public bool DarBaixa(int quantidade)
+        {
+            if (quantidade > 0 && quantidade <= this.quantidade)
+            {
+                this.quantidade -= quantidade;
+                return true;
+            }
+
+            return false;
+        }
+
         public int CompareTo(Produto other)
         {
-            return this.nome.CompareTo(other.nome);
+            return nome.CompareTo(other.nome);
+        }
+
+        public override string ToString()
+        {
+            return $"{nome} - {quantidade} un - R$ {preco:F2}";
         }
     }
 }
