@@ -8,5 +8,6 @@ namespace _17
 {
     internal interface IDescontavel
     {
+        decimal CalcularPrecoFinal();
     }
 }

@@ -41,6 +41,11 @@ namespace _17
             get { return quantidade; }
         }
 
+        public int Preco
+        {
+            get { return Preco; }
+        }
+
 
     }
 }
